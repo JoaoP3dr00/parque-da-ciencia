@@ -15,7 +15,7 @@ class _ConfirmationPageState extends State<ConfirmationPage> {
     super.initState();
     Future.delayed(const Duration(seconds: 8), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => ReviewPage()),
+        MaterialPageRoute(builder: (context) => HomePage()),
       );
     });
   }
@@ -24,7 +24,7 @@ class _ConfirmationPageState extends State<ConfirmationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Review Submitted'),
+        title: const Text('Feedback submetido'),
         centerTitle: true,
       ),
       body: Center(
@@ -32,12 +32,12 @@ class _ConfirmationPageState extends State<ConfirmationPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Thank you for your review!',
+              'Obrigado pelo seu feedback!',
               style: TextStyle(fontSize: 20),
             ),
             const Padding(padding: EdgeInsets.all(10)),
             const Text(
-              'Redirecting to Home Page in 5 seconds...',
+              'Redirecionando em 5 segundos...',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
           ],

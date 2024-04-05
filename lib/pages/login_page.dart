@@ -72,6 +72,18 @@ class _LoginPageState extends State<LoginPage> {
             const Spacer(),
 
             MyButton(text: "Entrar", onPressed: () {
+
+              if (validateEmailAndPassword(email, password)) {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()));
+              } else {
+                // Show a SnackBar or Dialog with an error message
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Invalid email or password'),
+                    backgroundColor: Colors.red,
+                  ),
+                );
+              }
               // Recolher nome e email
 
               // Entrar na HomePage
