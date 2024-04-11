@@ -74,7 +74,7 @@ class _QuestionBoxState extends State<QuestionBoxMedium> {
             ),
 
             RadioListTile<String>(
-              title: const Text('Muito, mas acho que tem poucas atrações', style: TextStyle(color: Colors.white, fontSize: 25),),
+              title: const Text('Muito bom, mas acho que tem poucas atrações', style: TextStyle(color: Colors.white, fontSize: 25),),
               value: 'Opção 3',
               groupValue: selectedOption,
               onChanged: (value) {
