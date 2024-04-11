@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 //import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:pc_app/pages/complex_confirmation_page.dart';
 import 'package:pc_app/pages/confirmation_page.dart';
 import 'package:pc_app/pages/login_page.dart';
 import 'package:sqflite/sqflite.dart';
@@ -70,10 +71,6 @@ class _HomePageState extends State<HomePage> {
     print("Salvo!");
   }
 
-
-
-  
-
   void openQuestionBox() {
     showDialog(
       context: context,
@@ -97,7 +94,7 @@ class _HomePageState extends State<HomePage> {
           onSave: () async{
             await saveNewReview(5, true);
             Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => ConfirmationPage()),
+            MaterialPageRoute(builder: (context) => ComplexConfirmationPage()),
           );
           },//saveNewReview(5, true),
           onCancel: () {
@@ -117,7 +114,7 @@ class _HomePageState extends State<HomePage> {
           onSave: () async{
             await saveNewReview(5, true);
             Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => ConfirmationPage()),
+            MaterialPageRoute(builder: (context) => ComplexConfirmationPage()),
           );
           },
           onCancel: () {
@@ -137,7 +134,7 @@ class _HomePageState extends State<HomePage> {
           onSave: () async{
             await saveNewReview(5, true);
             Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => ConfirmationPage()),
+            MaterialPageRoute(builder: (context) => ComplexConfirmationPage()),
           );
           },
           onCancel: () {
@@ -157,7 +154,7 @@ class _HomePageState extends State<HomePage> {
           onSave: () async{
             await saveNewReview(5, true);
             Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => ConfirmationPage()),
+            MaterialPageRoute(builder: (context) => ComplexConfirmationPage()),
           );
           },
           onCancel: () {
@@ -177,7 +174,7 @@ class _HomePageState extends State<HomePage> {
           onSave: () async{
             await saveNewReview(5, true);
             Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => ConfirmationPage()),
+            MaterialPageRoute(builder: (context) => ComplexConfirmationPage()),
           );
           },
           onCancel: () {

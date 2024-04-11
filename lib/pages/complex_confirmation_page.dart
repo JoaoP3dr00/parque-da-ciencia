@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:pc_app/pages/home_page.dart';
 import 'package:pc_app/pages/review_page.dart';
 import 'package:pc_app/pages/simple_nps_page.dart';
+import 'package:pc_app/pages/options_page.dart';
 
-class ConfirmationPage extends StatefulWidget {
-  const ConfirmationPage({Key? key}) : super(key: key);
+
+class ComplexConfirmationPage extends StatefulWidget {
+  const ComplexConfirmationPage({Key? key}) : super(key: key);
 
   @override
   _ConfirmationPageState createState() => _ConfirmationPageState();
 }
 
-class _ConfirmationPageState extends State<ConfirmationPage> {
+class _ConfirmationPageState extends State<ComplexConfirmationPage> {
   @override
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 8), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => SimpleNpsPage()),
+        MaterialPageRoute(builder: (context) => OptionPage()),
       );
     });
   }

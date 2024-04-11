@@ -32,6 +32,8 @@ dependencies:
     sdk: flutter
   sqflite: ^2.0.0
   path_provider: ^2.0.2
+  url_launcher: ^6.0.0
+  mailer: ^5.1.0
 
 
 
